@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+  
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">
+      Flexible Timing
+    </h1>
+    <p id="description" class="description text-center">
+      A freeCodeCamp (FCC) Survey Form
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-grup">
+      <label id="name-label" for="name"> Name </label>
+      <input type="text" name="name" id="name" class="form-ctrl" placeholder="Enter your full name" required="">
+    </div>
+    <div class="form-grup">
+      <label id="email-label" for="email"><br>
+        Email
+      </label>
+      <input type="email" name="email" id="email" class="form-ctrl" placeholder="Enter your email" required="">
+    </div>
+    <div class="form-grup">
+      <label id="number-label" for="number">
+        <br>
+        Student No.
+      </label>
+      <input type="number" name="number" id="number" class="form-ctrl" placeholder="Enter your student no." required="" min = 5000000000   max = 6000000000/>
+    </div>
+    <div class="form-grup">
+      <p>
+        <br>
+        What is your current stage of study?
+      </p>
+      <select id="dropdown" name="role" class="form-ctrl" required="">
+        <option disabled selected value>
+          Select current role
+        </option>
+        <option value="student">
+          Freshman (Undergraduate)
+        </option>
+        <option value="student">
+          Sophomore (Undergraduate)
+        </option>
+        <option value="student">
+          Senior (Undergraduate)
+        </option>
+        <option value="job">
+          Postgraduate
+        </option>
+        <option value="job">
+          Employed
+        </option>
+        <option value="other">
+          Other
+        </option>
+      </select>
+    </div>
+
+    <div class="form-grup">
+      <p><br>
+        Does flexible timing affect your life?
+      </p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>
+        Definitely
+      </label>
+      <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>
+        Maybe
+      </label>
+
+      <label
+        ><input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>
+        Not sure
+      </label>
+    </div>
+
+    <div class="form-grup">
+      <p> <br>
+        How much does this issue affect you?
+      </p>
+      <select id="most-like" name="mostLike" class="form-ctrl" required>
+        <option disabled selected value>
+          Select an option
+        </option>
+        <option value="none at all">
+          None at all
+        </option>
+        <option value="a little">
+          A little
+        </option>
+        <option value="somewhat">
+          Somewhat
+        </option>
+        <option value="greatly">
+          Greatly
+        </option>
+      </select>
+    </div>
+
+    <div class="form-grup">
+      <p style:"margin: 0 0 1em;"> <br>
+        From your opinion, how can we resolve this issue?
+        <span class="clue">(Check all that apply) </span>
+      </p>
+
+      <label>
+        <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>
+        Changes in habits
+      </label>
+      <label>
+        <input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>
+        Social programmes
+      </label>
+      <label>
+        <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>
+        Smart planning and action
+      </label>
+      <label>
+        <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"/>
+        Increased intracurricular engagement
+      </label>
+      <label>
+        <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>
+        Development of soft skills to hard skills
+      </label>
+      <label>
+        <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"/>
+        Improvements in home and learning environments
+      </label>
+    </div>
+
+    <div class="form-grup">
+      <p> <br>
+        Further comments on the topic :
+      </p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-grup"> <br>
+      <button type="submit" id="submit" class="submit-btn">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
